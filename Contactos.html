@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bethany's Pie Shop</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+        background-image: url("images/pattern.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      header {
+        background-color: #a67cb5;
+        padding: 10px 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header img {
+        height: 50px;
+        margin-right: 20px;
+      }
+
+      header nav {
+        margin-top: 10px;
+      }
+
+      header nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      .container {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .welcome {
+        grid-column: 1 / -1;
+        text-align: center;
+        color: #8f76a8;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .content img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+      }
+
+      .map {
+        width: 100%;
+        height: 400px;
+        max-width: 600px;
+        border: none;
+        border-radius: 10px;
+      }
+
+      .browse {
+        background-color: #eef3f7;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .browse h3 {
+        margin-bottom: 20px;
+      }
+
+      .browse img {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+
+      .browse button {
+        background-color: #f7c36e;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .address {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      footer {
+        background-color: #a67cb5;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+      }
+
+      @media (max-width: 1024px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        header {
+          text-align: left;
+          padding: 15px;
+        }
+
+        header nav {
+          text-align: left;
+          margin-top: 5px;
+        }
+
+        header nav a {
+          font-size: 1rem;
+          margin: 0 10px;
+        }
+
+        .browse button {
+          width: 100%;
+          margin: 5px 0;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header nav a {
+          font-size: 0.9rem;
+          margin: 0 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/cake.svg" alt="Cake" />
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="Productos.html">Productos</a>
+        <a href="#">Contáctos</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="welcome">
+        <h2>About Bethany's Pie Shop</h2>
+      </div>
+
+      <div class="content">
+        <img src="images/bethany.jpg" alt="Bethany in the pie shop" />
+
+        <!-- Mapa insertado desde Google Maps o similar -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.818369356895!2d-3.7038!3d40.4168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1624553704556!5m2!1ses!2ses"
+          class="map"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="address">
+        <p>
+          Our address is:<br />
+          Bethany's Pie Shop - Bakery Street 555 Brussels Belgium <br />
+          © 2024 Bethany's Pie Shop - All rights reserved
+        </p>
+      </div>
+    </div>
+
+    <footer>&copy; 2024 Bethany's Pie Shop</footer>
+  </body>
+</html>

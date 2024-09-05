@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bethany's Pie Shop</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+        background-image: url("images/pattern.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      header {
+        background-color: #a67cb5;
+        padding: 10px 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header img {
+        height: 50px;
+        margin-right: 20px;
+      }
+
+      header nav {
+        margin-top: 10px;
+      }
+
+      header nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      .container {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .welcome {
+        grid-column: 1 / -1;
+        text-align: center;
+        color: #8f76a8;
+      }
+
+      .pies-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .pie-item {
+        background-color: #eac2f9;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .pie-item img {
+        width: 100px;
+        margin-right: 20px;
+        border-radius: 10px;
+      }
+
+      .pie-item div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .pie-item h3 {
+        margin: 0;
+        color: #8f76a8;
+      }
+
+      .pie-item p {
+        margin: 5px 0;
+      }
+
+      .pie-item .price {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .browse {
+        background-color: #eef3f7;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .browse h3 {
+        margin-bottom: 20px;
+      }
+
+      .browse img {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+
+      .browse button {
+        background-color: #f7c36e;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .address {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      footer {
+        background-color: #a67cb5;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+      }
+
+      @media (max-width: 1024px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        header {
+          text-align: left;
+          padding: 15px;
+        }
+
+        header nav {
+          text-align: left;
+          margin-top: 5px;
+        }
+
+        header nav a {
+          font-size: 1rem;
+          margin: 0 10px;
+        }
+
+        .browse button {
+          width: 100%;
+          margin: 5px 0;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header nav a {
+          font-size: 0.9rem;
+          margin: 0 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/cake.svg" alt="Cake" />
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="Contactos.html">Contáctos</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="welcome">
+        <h2>Welcome to Bethany's Pie Shop</h2>
+      </div>
+
+      <div class="pies-list">
+        <div class="pie-item">
+          <img src="products/strawberrypiesmall.jpg" alt="Strawberry Pie" />
+          <div>
+            <h3>Bethany's Strawberry Pie</h3>
+            <p>Sweet, juicy, vibrant</p>
+            <p class="price">$15.00</p>
+          </div>
+        </div>
+        <div class="pie-item">
+          <img src="products/applepie.jpg" alt="Apple pie" />
+          <div>
+            <h3>Bethany's Apple Pie</h3>
+            <p>Creamy, sweet, indulgent</p>
+            <p class="price">$16.00</p>
+          </div>
+        </div>
+        <div class="pie-item">
+          <img src="products/pumpkinpiesmall.jpg" alt="Pumpkin Pie" />
+          <div>
+            <h3>Bethany's Pumpkin Pie</h3>
+            <p>Tangy, creamy, zesty</p>
+            <p class="price">$15.00</p>
+          </div>
+        </div>
+        <div class="pie-item">
+          <img src="products/strawberrypiesmall.jpg" alt="Strawberry Pie" />
+          <div>
+            <h3>Bethany's Strawberry Pie</h3>
+            <p>Spicy, buttery, classic</p>
+            <p class="price">$14.00</p>
+          </div>
+        </div>
+        <div class="pie-item">
+          <img src="products/cheesecake.jpg" alt="Cheesecake Pie" />
+          <div>
+            <h3>Bethany's Cheesecake Pie</h3>
+            <p>Rich, creamy, smooth</p>
+            <p class="price">$14.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="browse">
+        <img src="images/bethanylogo.png" alt="Bethany's Pie Shop logo" />
+        <h3>Browse our pies</h3>
+        <button onclick="location.href='Productos.html'">Products</button>
+        <button onclick="location.href='Contactos.html'">Contacts</button>
+        <button>Fruit pies</button>
+        <button>Promotions</button>
+      </div>
+
+      <div class="address">
+        <p>
+          Our address is:<br />
+          Bethany's Pie Shop - Bakery Street 555 Brussels Belgium <br />
+          © 2024 Bethany's Pie Shop - All rights reserved
+        </p>
+      </div>
+    </div>
+
+    <footer>&copy; 2024 Bethany's Pie Shop</footer>
+  </body>
+</html>

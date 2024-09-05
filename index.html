@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bethany's Pie Shop</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+        background-image: url("images/pattern.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      header {
+        background-color: #b983cd;
+        padding: 10px 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header img {
+        height: 50px;
+        margin-right: 20px;
+      }
+
+      header nav {
+        margin-top: 10px;
+      }
+
+      header nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      .container {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .welcome {
+        grid-column: 1 / -1;
+        text-align: center;
+        color: #8f76a8;
+      }
+
+      .history {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        align-items: start;
+      }
+
+      .history img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .history p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .browse {
+        background-color: #eef3f7;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .browse h3 {
+        margin-bottom: 20px;
+      }
+
+      .browse img {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+
+      .browse button {
+        background-color: #f7c36e;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .address {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      footer {
+        background-color: #a67cb5;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+      }
+
+      @media (max-width: 1024px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+
+        .history {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        header {
+          text-align: left;
+          padding: 15px;
+        }
+
+        header nav {
+          text-align: left;
+          margin-top: 5px;
+        }
+
+        header nav a {
+          font-size: 1rem;
+          margin: 0 10px;
+        }
+
+        .browse button {
+          width: 100%;
+          margin: 5px 0;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header nav a {
+          font-size: 0.9rem;
+          margin: 0 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/cake.svg" alt="Cake" />
+      <nav>
+        <a href="#">Inicio</a>
+
+        <a href="Productos.html">Productos</a>
+
+        <a href="Contactos.html">Contáctos</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="welcome">
+        <h2>Welcome to Bethany's Pie Shop</h2>
+      </div>
+
+      <div class="history">
+        <img src="images/bethany.jpg" alt="Bethany in the pie shop" />
+        <div>
+          <h3>History</h3>
+          <p>
+            For many years, Bethany has been baking the most delicious pies at
+            her home. In 2015, she opened her first store in Brussels.
+            Delightful in a cozy little street near the Grand Market, people
+            from all over the city fell in love with the hot cookies, heavenly
+            cheese cakes, spicy apple pies... The store became a success in no
+            time.
+          </p>
+          <p>
+            In 2015, no less than 100 pies were sold every day and Bethany's Pie
+            Shop moved to a larger building. After receiving many requests, it
+            became clear that our next step was making it possible to order pies
+            from the comfort of your home from and from anywhere in the world.
+            We are now making all our products in the very best stores. You will
+            notice it in our fresh, user-friendly website, making it possible to
+            order Bethany's delicious pies wherever you feel like it!
+          </p>
+          <p>
+            Bethany is famous for using only the best ingredients. This way, we
+            can make the best tart. Our pies are absolutely the best!
+          </p>
+        </div>
+      </div>
+
+      <div class="browse">
+        <img src="images/bethanylogo.png" alt="Bethany's Pie Shop logo" />
+        <h3>Browse our pies</h3>
+        <button onclick="location.href='Productos.html'">Products</button>
+        <button onclick="location.href='Contactos.html'">Contacts</button>
+        <button>Fruit pies</button>
+        <button>Promotions</button>
+      </div>
+
+      <div class="address">
+        <p>
+          Our address is:<br />
+          Bethany's Pie Shop - Bakery Street 555 Brussels Belgium <br />
+          © 2024 Bethany's Pie Shop - All rights reserved
+        </p>
+      </div>
+    </div>
+
+    <footer>&copy; 2024 Bethany's Pie Shop</footer>
+  </body>
+</html>
